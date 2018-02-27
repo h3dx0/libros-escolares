@@ -1,8 +1,28 @@
 body {
-  padding: 50px;
+  background-color: #ebebeb;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+header {
+    margin-bottom:20px;
+}
 a {
   color: #00B7FF;
+}
+.vender-libro {
+    padding:10px;
+}
+.vender-libro-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+}
+.vender-libro-form__item {
+    margin-right:10px;
+    min-width:30%;
+}
+.vender-libro-form__textarea {
+    width: 100%;
+}
+.vender-libro-form__btn {
+    margin-top:10px;
 }

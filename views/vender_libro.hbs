@@ -1,0 +1,73 @@
+<div class="vender-libro card">
+    <h3 class="text-center">Datos del libro a vender</h3>
+    <form action="#" method="post" class="vender-libro-form">
+        <div class="vender-libro-form__item form-group">
+            <input type="text" class="vender-libro-form__input form-control" id="titulo" name="titulo"
+                   aria-describedby="titulo"
+                   placeholder="Titulo">
+        </div>
+        <div class="vender-libro-form__item form-group">
+            <select name="grado-escolar" class="vender-libro-form__input form-control mr-sm-2" id="grado-escolar">
+                <option value="-1">-seleccione grado escolar--</option>
+                <option value="0">Kinder</option>
+                <option value="1">1erGrado</option>
+                <option value="2">2doGrado</option>
+                <option value="3">3erGrado</option>
+            </select>
+        </div>
+        <div class="vender-libro-form__item form-group">
+            <input type="text" class="form-control vender-libro-form__input" id="categoria" name="categoria"
+                   aria-describedby="categoria"
+                   placeholder="Categoría">
+        </div>
+        <div class="vender-libro-form__item form-group">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">$</div>
+                </div>
+                <input type="number" class="form-control" id="precio"
+                       placeholder="Precio">
+            </div>
+        </div>
+        <div class="vender-libro-form__item form-group">
+            <input type="number"
+                   class="form-control vender-libro-form__input"
+                   id="cantidad" name="cantidad"
+                   aria-describedby="cantidad"
+                   placeholder="Cantidad">
+        </div>
+        <div class="vender-libro-form__item form-group">
+            <input type="file"
+                   class="form-control vender-libro-form__input"
+                   id="imagen" name="imagen"
+                   aria-describedby="imagen"
+                   placeholder="Imagen">
+        </div>
+        <div class="vender-libro-form__item form-group">
+            <input type="text"
+                   class="form-control vender-libro-form__input"
+                   id="nombrePersona" name="nombrePersona"
+                   aria-describedby="nombrePersona"
+                   placeholder="Nombre del dueño">
+        </div>
+        <div class="vender-libro-form__item form-group">
+            <input type="email"
+                   class="form-control vender-libro-form__input"
+                   id="email" name="email"
+                   aria-describedby="email"
+                   placeholder="email">
+        </div>
+        <div class="vender-libro-form__item form-group">
+            <input type="tel"
+                   class="form-control vender-libro-form__input"
+                   id="telefono" name="telefono"
+                   aria-describedby="telefono"
+                   placeholder="Telefono">
+        </div>
+        <textarea name="descripcion"
+                  placeholder="Escriba una descripcion del libro"
+                  class="vender-libro-form__textarea form-control" id="descripcion"
+                  cols="50" rows="5"></textarea>
+        <button class="btn btn-success btn-block vender-libro-form__btn">Publicar</button>
+    </form>
+</div>
