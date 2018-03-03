@@ -7,6 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('libros-escolares:server');
 var http = require('http');
+var mongoose = require('mongoose')
+let config = require('../config');
 
 /**
  * Get port from environment and store in Express.
@@ -21,6 +23,14 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
+mongoose.connect(config.db,(err,resp) =>{
+    if (err) {
+        return console.log(`Error al conectarse a la BD:${err}`);
+    }
+    console.log('Conexion exitosa a la BD')
+    server.listen(port);
+
+});
 /**
  * Listen on provided port, on all network interfaces.
  */

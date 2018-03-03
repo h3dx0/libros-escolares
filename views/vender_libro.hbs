@@ -1,4 +1,5 @@
 <div class="vender-libro card">
+
     <h3 class="text-center">Datos del libro a vender</h3>
     <form action="#" method="post" class="vender-libro-form">
         <div class="vender-libro-form__item form-group">
@@ -7,7 +8,7 @@
                    placeholder="Titulo">
         </div>
         <div class="vender-libro-form__item form-group">
-            <select name="grado-escolar" class="vender-libro-form__input form-control mr-sm-2" id="grado-escolar">
+            <select name="gradoEscolar" class="vender-libro-form__input form-control mr-sm-2" id="grado-escolar">
                 <option value="-1">-seleccione grado escolar--</option>
                 <option value="0">Kinder</option>
                 <option value="1">1erGrado</option>
@@ -16,7 +17,10 @@
             </select>
         </div>
         <div class="vender-libro-form__item form-group">
-            <input type="text" class="form-control vender-libro-form__input" id="categoria" name="categoria"
+            <input type="text"
+                   class="form-control vender-libro-form__input"
+                   id="categoria"
+                   name="categoria"
                    aria-describedby="categoria"
                    placeholder="Categoría">
         </div>
@@ -25,7 +29,8 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">$</div>
                 </div>
-                <input type="number" class="form-control" id="precio"
+                <input type="number" class="form-control"
+                       name="precio" id="precio"
                        placeholder="Precio">
             </div>
         </div>

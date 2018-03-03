@@ -7,15 +7,8 @@ let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 let index = require('./routes/index');
 let users = require('./routes/users');
-
 let app = express();
 
-try {
-    mongoose.connect('localhost:27017/libros_escolares');
-    console.log("Conexion exitosa");
-}catch (err) {
-    console.log("Error en la conexion con la DB")
-}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
