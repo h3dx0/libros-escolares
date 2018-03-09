@@ -4,3 +4,9 @@
 .bb {
     border-bottom: solid 1px #c9c9c9;
 }
+.pd-10 {
+    padding:10px;
+}
+.pd-5 {
+    padding:5px;
+}

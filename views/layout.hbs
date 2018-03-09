@@ -4,6 +4,7 @@
     <title>{{title}}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/js/vendors/owl-carousel/owl-carousel/owl.carousel.css"/>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <link rel='stylesheet' href='/stylesheets/utiles.css'/>
 </head>
@@ -31,10 +32,9 @@
                     <input class="form-control mr-sm-2" type="search" placeholder="Categoria" aria-label="Categoría">
                     <select name="grado-escolar" class="form-control mr-sm-2" id="grado-escolar">
                         <option value="-1">-seleccione grado escolar--</option>
-                        <option value="0">Kinder</option>
-                        <option value="1">1erGrado</option>
-                        <option value="2">2doGrado</option>
-                        <option value="3">3erGrado</option>
+                        {{#each gradosEscolares }}
+                            <option value="{{this.codigo}}">{{this.texto}}</option>
+                        {{/each}}
                     </select>
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
@@ -45,5 +45,18 @@
 <div class="container">
     {{{body}}}
 </div>
+<script src="/js/vendors/jquery/dist/jquery.min.js"></script>
+<script src="/js/vendors/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            items: 1,
+            loop: true,
+            nav: true,
+            margin: 10
+        });
+    });
+</script>
 </body>
 </html>

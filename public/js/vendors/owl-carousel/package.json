@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "owl-carousel@1.0.0",
+        "scope": null,
+        "escapedName": "owl-carousel",
+        "name": "owl-carousel",
+        "rawSpec": "1.0.0",
+        "spec": "1.0.0",
+        "type": "version"
+      },
+      "/home/h3dx0/Dev/libros_escolares"
+    ]
+  ],
+  "_from": "owl-carousel@1.0.0",
+  "_id": "owl-carousel@1.0.0",
+  "_inCache": true,
+  "_location": "/owl-carousel",
+  "_nodeVersion": "8.2.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/owl-carousel-1.0.0.tgz_1507933480902_0.9780705778393894"
+  },
+  "_npmUser": {
+    "name": "f(x)-financing",
+    "email": "ti@fdex.com.br"
+  },
+  "_npmVersion": "5.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "owl-carousel@1.0.0",
+    "scope": null,
+    "escapedName": "owl-carousel",
+    "name": "owl-carousel",
+    "rawSpec": "1.0.0",
+    "spec": "1.0.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/owl-carousel/-/owl-carousel-1.0.0.tgz",
+  "_shasum": "70ca83d4847d3b903a330942523db6334f43ce6e",
+  "_shrinkwrap": null,
+  "_spec": "owl-carousel@1.0.0",
+  "_where": "/home/h3dx0/Dev/libros_escolares",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/fdexfinancing/own-carousel/issues"
+  },
+  "dependencies": {},
+  "description": "Old own-carousel implementation",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-xgOxxUqpSPM0dopWkcMri9MoGv8TrEDAnsc+6OYuHhO2x3YpsEKDW2fJomPDOA6KkSTa3utLvgP+irVwAXSGog==",
+    "shasum": "70ca83d4847d3b903a330942523db6334f43ce6e",
+    "tarball": "https://registry.npmjs.org/owl-carousel/-/owl-carousel-1.0.0.tgz"
+  },
+  "gitHead": "22fe2d1be0115c41e537fed1a522c998be3f9bca",
+  "homepage": "https://github.com/fdexfinancing/own-carousel#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "f",
+      "email": "ti@fdex.com.br",
+      "url": "x"
+    }
+  ],
+  "name": "owl-carousel",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdexfinancing/own-carousel.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

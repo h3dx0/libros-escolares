@@ -1,7 +1,7 @@
 <div class="vender-libro card">
 
     <h3 class="text-center">Datos del libro a vender</h3>
-    <form action="#" method="post" class="vender-libro-form">
+    <form action="#" method="post" class="vender-libro-form" enctype="multipart/form-data">
         <div class="vender-libro-form__item form-group">
             <input type="text" class="vender-libro-form__input form-control" id="titulo" name="titulo"
                    aria-describedby="titulo"
@@ -10,19 +10,18 @@
         <div class="vender-libro-form__item form-group">
             <select name="gradoEscolar" class="vender-libro-form__input form-control mr-sm-2" id="grado-escolar">
                 <option value="-1">-seleccione grado escolar--</option>
-                <option value="0">Kinder</option>
-                <option value="1">1erGrado</option>
-                <option value="2">2doGrado</option>
-                <option value="3">3erGrado</option>
+                {{#each gradosEscolares }}
+                    <option value="{{this.codigo}}">{{this.texto}}</option>
+                {{/each}}
             </select>
         </div>
         <div class="vender-libro-form__item form-group">
             <input type="text"
                    class="form-control vender-libro-form__input"
-                   id="categoria"
-                   name="categoria"
-                   aria-describedby="categoria"
-                   placeholder="Categoría">
+                   id="asignatura"
+                   name="asignatura"
+                   aria-describedby="asignatura"
+                   placeholder="Asignatura">
         </div>
         <div class="vender-libro-form__item form-group">
             <div class="input-group mb-2">
@@ -41,12 +40,23 @@
                    aria-describedby="cantidad"
                    placeholder="Cantidad">
         </div>
-        <div class="vender-libro-form__item form-group">
+        <div class="vender-libro-form__item form-group well well-small">
+            <input type="file"
+                   multiple="1"
+                   class="form-control vender-libro-form__input"
+                   id="imagen1" name="imagen"
+                   aria-describedby="imagen1"
+                   placeholder="Imagen1" required>
             <input type="file"
                    class="form-control vender-libro-form__input"
-                   id="imagen" name="imagen"
-                   aria-describedby="imagen"
-                   placeholder="Imagen">
+                   id="imagen2" name="imagen"
+                   aria-describedby="imagen2"
+                   placeholder="Imagen2">
+            <input type="file"
+                   class="form-control vender-libro-form__input"
+                   id="imagen3" name="imagen"
+                   aria-describedby="imagen3"
+                   placeholder="Imagen3">
         </div>
         <div class="vender-libro-form__item form-group">
             <input type="text"

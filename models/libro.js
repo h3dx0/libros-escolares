@@ -6,13 +6,9 @@ let libroSchema = new Schema({
     descripcion: {type: String, required: true},
     precio: {type: Number, required: true},
     cantidad: {type: Number, required: true, default: 1},
-    galeria: [
-        { imagen1: {type: String, required: false} },
-        { imagen2: {type: String, required: false} },
-        { imagen3: {type: String, required: false} }
-    ],
-    categorias: {type: String, required: true},
-    gradoEscolar: {type: String, required: true},
+    imagenes: [{type: String, required: true}],
+    asignatura: {type: String, required: true},
+    gradoEscolar: {type: Number, required: true},
     contacto: {
         nombrePersona: {type: String},
         email: {type: String},
