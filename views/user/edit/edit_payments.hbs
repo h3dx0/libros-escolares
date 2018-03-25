@@ -1,0 +1,15 @@
+<style>
+</style>
+<div class="row">
+    <div class="col-xs-12">
+        <form action="#" method="post">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <div class="form-group">
+                <input type="email" name="email" value="{{user.email}}" placeholder="email">
+                <input type="text" name="name" value="{{user.name}}" placeholder="name">
+                <input type="text" name="firstName" value="{{user.firstName}}" placeholder="firstName">
+                <button class="btn btn-success">Edit</button>
+            </div>
+        </form>
+    </div>
+</div>

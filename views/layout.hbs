@@ -26,6 +26,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/vender-libro"> Vender libro</a>
                     </li>
+                    {{#if login}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/profile"> Mi cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/logout"> Cerrar sesión</a>
+                        </li>
+                    {{else}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/signup"> Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/signin"> Iniciar sesión</a>
+                        </li>
+                    {{/if}}
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Título" aria-label="Titulo">
@@ -47,6 +62,12 @@
 </div>
 <script src="/js/vendors/jquery/dist/jquery.min.js"></script>
 <script src="/js/vendors/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
         $('.owl-carousel').owlCarousel({

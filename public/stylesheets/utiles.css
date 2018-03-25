@@ -10,3 +10,13 @@
 .pd-5 {
     padding:5px;
 }
+.dsp-block {
+    display: block;
+    margin: 0 auto;
+}
+.m-15{
+    margin: 15px;
+}
+.mr-15{
+    margin-right: 15px;
+}

@@ -1,0 +1,41 @@
+<style>
+    .container-card {
+        border: solid 1px #cbcbcb;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+        background-color: #fff;
+    }
+</style>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="container-card">
+            <h4>Información Personal</h4>
+            <hr>
+            <label for="name" class="badge badge-info">Nombre:</label>
+            <p>{{user.name}}</p>
+            <label for="firstName" class="badge badge-info">Apellido:</label>
+            <p>{{user.firstName}}</p>
+
+            <p> <label for="email" class="badge badge-info mr-15">Email:</label>{{user.email}}</p>
+            <a href="/user/profile/edit/personal-info" class="btn btn-success">editar</a>
+        </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="container-card">
+            <h4>Direcciones de envío</h4>
+            <hr>
+            <a href="/user/profile/edit/address" class="btn btn-success">editar</a>
+
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="container-card">
+            <h4>Métodos de pago</h4>
+            <hr>
+            <a href="/user/profile/edit/payments" class="btn btn-success">edit</a>
+
+        </div>
+    </div>
+</div>
