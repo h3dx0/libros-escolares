@@ -42,10 +42,10 @@
                         </li>
                     {{/if}}
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Título" aria-label="Titulo">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Categoria" aria-label="Categoría">
-                    <select name="grado-escolar" class="form-control mr-sm-2" id="grado-escolar">
+                <form class="form-inline my-2 my-lg-0" action="/buscar-libro" method="post">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Título" name="titulo" id="titulo" aria-label="Titulo">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Asignatura" name="asignatura" id="asignatura" aria-label="asignatura">
+                    <select name="gradoescolar" class="form-control mr-sm-2" id="grado-escolar">
                         <option value="-1">-seleccione grado escolar--</option>
                         {{#each gradosEscolares }}
                             <option value="{{this.codigo}}">{{this.texto}}</option>

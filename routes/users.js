@@ -19,7 +19,6 @@ router.post('/profile/edit/personal-info', isLoggedIn, function (req, res, next)
     let firstName = req.body.firstName;
     let email = req.body.email;
     if (email === "" || name === "" || firstName === "") {
-        console.log('Campos vacios')
         return res.render('user/edit/edit_personal_info', {user: req.user, csrfToken: req.csrfToken(), msg: 'No puede dejar ninugn campo vacio'});
     }
     let user = User.findById(req.user._id, function (err, user) {

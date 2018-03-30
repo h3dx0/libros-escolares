@@ -1,0 +1,28 @@
+<h5 class="bb mb-3">Resultado de búsqueda</h5>
+
+<div class="listado-libros row">
+    {{# each libros }}
+        <div class="col-sm-12 col-md-3">
+            <div class="card mb-4 box-shadow border-primary item-libro">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="http://sr.photos3.fotosearch.com/bthumb/CSP/CSP543/k5431515.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.titulo}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{this.categorias}}</h6>
+                    <p class="card-text">{{this.descripcion}}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="/detalle-libro/{{this._id}}" class="btn btn-sm btn-primary">Ver</a>
+                            <button type="button" class="btn btn-sm btn-success">Comprar</button>
+                        </div>
+                        <p class="font-weight-bold fs-25">${{this.precio}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+
+</div>

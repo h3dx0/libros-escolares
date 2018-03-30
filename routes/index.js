@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 let cloudinary = require('cloudinary').v2;
 let Libro = require('../models/libro');
-
+let mainController = require('../controllers/index');
 let multer = require('multer');
 let upload = multer({dest: 'uploads/'});
 
@@ -78,5 +78,7 @@ router.get('/detalle-libro/:id', function (req, res, next) {
 
         })
 });
+
+router.post('/buscar-libro', mainController.buscarLibro);
 
 module.exports = router;
